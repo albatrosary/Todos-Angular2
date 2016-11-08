@@ -1,14 +1,6 @@
 <h2>Todos</h2>
-<form (ngSubmit)="onSubmit()" #todoForm="ngForm">
-  <input [(ngModel)]="todo.title" name="title" required placeholder="title">
-  <textarea [(ngModel)]="todo.desc" name="desc" required placeholder="desc"></textarea>
-  <button type=submit [disabled]="!todoForm.form.valid">登録</button>
-</form>
-<div ngClass="todos" *ngFor="let todo of todos; let i = index">
-  <div ngClass="list-no">{{i+1}}</div>
-  <div>
-    <p>{{todo.title}}</p>
-    <pre>{{todo.desc}}</pre>
-    <button (click)="onDelete(i)">削除</button>
-  </div>
-</div>
+<app-todo-input></app-todo-input>
+<app-todo-list></app-todo-list>
+<!--
+
+-->

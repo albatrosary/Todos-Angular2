@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { TodoStoreService } from './todo-store.service'
+import { TodoStoreService } from './todo-store.service';
+import { TodoInputComponent } from './todo-input/todo-input.component';
+import { TodoListComponent } from './todo-list/todo-list.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoInputComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

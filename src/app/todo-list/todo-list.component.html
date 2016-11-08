@@ -1,0 +1,8 @@
+<div ngClass="todos" *ngFor="let todo of todos; let i = index">
+  <div ngClass="list-no">{{i+1}}</div>
+  <div>
+    <p>{{todo.title}}</p>
+    <pre>{{todo.desc}}</pre>
+    <button (click)="onDelete(i)">削除</button>
+  </div>
+</div>

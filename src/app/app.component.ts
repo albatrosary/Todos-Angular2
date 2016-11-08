@@ -18,16 +18,6 @@ export class AppComponent {
   ) {}
 
   ngOnInit(): void {
-    this.todo = new Todo;
-    this.todos = this.todoStoreService.list;
   }
 
-  public onSubmit(): void {
-    this.todoStoreService.add(this.todo);
-    this.todo = new Todo;
-  }
-
-  public onDelete(index: number): void {
-    this.todoStoreService.delete(index);
-  }
 }

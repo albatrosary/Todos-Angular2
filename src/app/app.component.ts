@@ -9,13 +9,7 @@ import { TodoStoreService } from './todo-store.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  private todo: Todo;
-  private todos: Todo[];
-
-  constructor (
-    private todoStoreService: TodoStoreService
-  ) {}
+  constructor () {}
 
   ngOnInit(): void {
   }

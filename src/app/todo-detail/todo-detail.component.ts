@@ -7,13 +7,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TodoDetailComponent implements OnInit {
 
-  @Input('row-num')
+  @Input('rownum')
   private rownum: number;
 
-  @Input('todo-title')
+  @Input('title')
   private title: string;
 
-  @Input('todo-desc')
+  @Input('desc')
   private desc: string;
 
   @Output('on-delete')

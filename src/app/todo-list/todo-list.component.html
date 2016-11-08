@@ -1,8 +1,8 @@
 <div ngClass="todos" *ngFor="let todo of todos; let i = index">
   <app-todo-detail
-    [row-num]="i"
-    [todo-title]="todo.title"
-    [todo-desc]="todo.desc"
+    [rownum]="i"
+    [title]="todo.title"
+    [desc]="todo.desc"
     (on-delete)="onDelete(i)">
   ></app-todo-detail>
 </div>
